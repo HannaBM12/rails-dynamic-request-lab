@@ -1,8 +1,8 @@
-
-  <div>
-  <% @students.each do |student| %>
-    <div><%= student.first_name + " " + student.last_name %></div>
+<div>
+  <h1>Students Index Page </h1>
+  <% @students.map do |stud|%>
+  <%= stud.first_name + " "+ stud.last_name %>
   <% end %>
-</div> 
+</div>
   
   
